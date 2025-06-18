@@ -89,6 +89,12 @@ video, canvas {
 .options-group::-webkit-scrollbar {
   display: none;
 }
+.options-group button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
 
 .options-group button img {
   width: 60px;
