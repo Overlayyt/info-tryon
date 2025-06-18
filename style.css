@@ -10,7 +10,7 @@ body, html {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #0b0b0b; 
+  background-color: #0b0b0b;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
@@ -25,7 +25,6 @@ video, canvas {
   z-index: 1;
 }
 
-/* Branding */
 #branding {
   position: fixed;
   top: 20px;
@@ -35,7 +34,6 @@ video, canvas {
   font-family: 'Cinzel', serif;
   font-size: 24px;
   color: #ffd700;
-  letter-spacing: 1px;
 }
 
 .camera-icon {
@@ -45,7 +43,6 @@ video, canvas {
   margin-right: 8px;
 }
 
-/* Jewelry Mode Buttons */
 #jewelry-mode {
   position: fixed;
   right: 20px;
@@ -71,7 +68,6 @@ video, canvas {
   background-color: #e6c200;
 }
 
-/* Jewelry Option Groups */
 .options-group {
   position: fixed;
   bottom: 30px;
@@ -98,8 +94,7 @@ video, canvas {
   width: 60px;
   height: 60px;
   border-radius: 12px;
-  border: 2px solid transparent;
-  transition: border 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .options-group button:hover img {
@@ -107,76 +102,36 @@ video, canvas {
   transform: scale(1.05);
 }
 
-/* Snapshot Button */
 #snapshot-btn {
   position: fixed;
   top: 20px;
   right: 80px;
   background-color: #ffd700;
-  color: #000;
   border: none;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
   z-index: 10;
-  transition: background-color 0.3s ease;
 }
 
 #snapshot-btn img {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
 
-#snapshot-btn:hover {
-  background-color: #e6c200;
-}
-
-/* Snapshot Modal */
-#snapshot-modal {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  color: #000;
-  padding: 20px;
-  border-radius: 12px;
-  z-index: 9999;
-  text-align: center;
-}
-
-#snapshot-preview {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.snapshot-buttons {
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
-}
-
-/* Info Button */
 #info-btn {
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 20px;
   background-color: #ffd700;
   color: #000;
   border: none;
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 18px;
+  padding: 10px 12px;
+  border-radius: 8px;
   cursor: pointer;
   z-index: 10;
-  width: 48px;
-  height: 48px;
 }
 
-/* Info Modal */
 #info-modal {
   display: none;
   position: fixed;
@@ -194,7 +149,7 @@ video, canvas {
 
 .info-content ul {
   padding-left: 20px;
-  margin-top: 10px;
+  line-height: 1.6;
 }
 
 .close-btn {
@@ -205,4 +160,34 @@ video, canvas {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 20px;
+}
+
+#snapshot-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  z-index: 9999;
+}
+
+#snapshot-preview {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.snapshot-buttons button {
+  margin: 5px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #ffd700;
+  color: #000;
+  cursor: pointer;
 }
